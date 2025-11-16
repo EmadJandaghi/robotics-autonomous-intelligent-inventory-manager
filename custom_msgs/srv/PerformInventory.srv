@@ -1,0 +1,7 @@
+---
+string aoi_color
+string total_json        # JSON string of the {item:count}
+string missing_json      # JSON string of {item:missing_count}
+string misplaced_json    # JSON string of {item:count}
+bool success
+string message

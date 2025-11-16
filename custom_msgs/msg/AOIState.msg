@@ -1,0 +1,1 @@
+string state  # "IDLE","FOLLOWING","AOI_DETECTED","ARRIVED","REALIGNING"

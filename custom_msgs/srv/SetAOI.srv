@@ -1,0 +1,4 @@
+string color   # "blue", "red", "yellow", "green"
+---
+bool accepted
+string message
