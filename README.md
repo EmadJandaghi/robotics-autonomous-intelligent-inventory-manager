@@ -6,8 +6,12 @@ The system ties together:
 
 - Color based perception for line following and AOI detection  
 - Navigation to colored AOIs  
-- Intelligent inventory checking on upper and lower shelves using deep learning  
+- Intelligent inventory checking on upper and lower shelves using deep learning
+
+   
 ![Image](https://github.com/user-attachments/assets/185d14ec-c9f1-4b4e-9b54-42560b437ca2)
+
+
 ---
 
 ## Table of Contents
@@ -427,7 +431,9 @@ Services
 ---
 
 ## Demonstration
+
 https://github.com/user-attachments/assets/4ee275ef-d709-496f-84eb-645ef26dad46
+
 1. Purple Line Following
 
 The robot follows the designated purple path around the shelf, maintaining alignment through continuous visual feedback.
@@ -456,5 +462,6 @@ Once all four AOIs have been visited and checked, the robot performs a safe stop
 
 <img width="1461" height="820" alt="Image" src="https://github.com/user-attachments/assets/fd837b19-df83-4d72-b000-2860bf332497" />
 <img width="1534" height="848" alt="Image" src="https://github.com/user-attachments/assets/c414581a-9db3-4220-8e1c-71b9163b3ecf" />
+
 A sample image showing YOLOv8 detections overlaid on the camera feed, including bounding boxes and labels.
 
