@@ -25,8 +25,6 @@ The system ties together:
    - [InventoryChecking (`inventory_checking.py`)](#inventorychecking-inventory_checkingpy)  
    - [TrajectorySender (`trajectory_sender.py`)](#trajectorysender-trajectory_senderpy)  
 9. [Topics and Services](#topics-and-services)  
-10. [Inventory Logic and Scenarios](#inventory-logic-and-scenarios)  
-11. [Future Improvements](#future-improvements)
 
 ---
 
