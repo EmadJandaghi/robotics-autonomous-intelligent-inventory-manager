@@ -57,7 +57,7 @@ Camera (RGB)  -->  AOIFollower (line + AOI color detection)
                       | start/stop_detection (Trigger)
                       v
                 YoloObjectDetection  -->  ObjectCount (topic)
-```text
+```
 
 ---
 
