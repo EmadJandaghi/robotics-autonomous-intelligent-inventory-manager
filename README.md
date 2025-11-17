@@ -24,7 +24,8 @@ The system ties together:
    - [YoloObjectDetection (`object_detection.py`)](#yoloobjectdetection-object_detectionpy)  
    - [InventoryChecking (`inventory_checking.py`)](#inventorychecking-inventory_checkingpy)  
    - [TrajectorySender (`trajectory_sender.py`)](#trajectorysender-trajectory_senderpy)  
-9. [Topics and Services](#topics-and-services)  
+9. [Topics and Services](#topics-and-services)
+10. [Demonstration](#Demonstration) 
 
 ---
 
@@ -38,6 +39,7 @@ At each AOI, the robot:
 2. Moves its head to look at the lower shelf and runs object detection again.  
 3. Merges counts from both shelves to compute the total inventory.  
 4. Compares the result with the expected stock for that AOI and reports **missing** and **misplaced** items.
+
 
 ---
 
@@ -420,3 +422,38 @@ Services
 * start_detection (std_srvs/Trigger)
 
 * stop_detection (std_srvs/Trigger)
+
+
+---
+
+## Demonstration
+
+1. Purple Line Following
+
+The robot follows the designated purple path around the shelf, maintaining alignment through continuous visual feedback.
+
+2. AOI Blob Detection and Alignment
+
+The robot identifies colored AOI blobs (yellow, green, red, blue), switches into AOI centering mode, and aligns itself precisely before stopping.
+
+3. YOLO Shelf Scanning
+
+Demonstration of upper and lower shelf scanning during the inventory pipeline using YOLOv8:
+
+Upper shelf detection
+
+Lower shelf detection
+
+Full inventory generation
+
+4. Robot Reacquiring the Line and Searching for Next AOI
+
+After finishing an AOI inventory cycle, the robot rotates, repositions, finds the purple line again, and proceeds to the next AOI.
+
+5. Mission Completion and Shutdown
+
+Once all four AOIs have been visited and checked, the robot performs a safe stop and ends the mission.
+
+
+A sample image showing YOLOv8 detections overlaid on the camera feed, including bounding boxes and labels.
+
